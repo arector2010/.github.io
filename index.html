@@ -13,37 +13,63 @@
             background-color: #f0f8ff; /* Light blue */
             color: #333; /* Dark gray */
         }
-        
+
         header {
-            background-color: #4169e1; /* Royal blue */
+            background-color: #1e3a5f; /* Dark blue */
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
-        
-        h1 {
-            margin-bottom: 10px;
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2a5c8e; /* Medium blue */
+            padding: 10px 0;
         }
-        
-        section {
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4169e1; /* Royal blue */
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
             padding: 20px;
-            margin: 20px;
+        }
+
+        .content {
+            max-width: 900px;
+            width: 100%;
             background-color: #fff;
             border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #4169e1; /* Royal blue */
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #1e3a5f; /* Dark blue */
+            border-bottom: 2px solid #1e3a5f;
+            padding-bottom: 10px;
         }
 
         .projects {
             background-color: #e0f7fa; /* Light cyan */
+            padding: 20px;
+            border-radius: 5px;
         }
 
         .project-item {
@@ -63,6 +89,26 @@
         .graphic {
             text-align: center;
         }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1e3a5f; /* Dark blue */
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -72,38 +118,49 @@
         <p>Business Systems Consultant</p>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Welcome to my personal webpage! I'm Aaron Rector, a Business Systems Consultant working for Progressive Insurance. I specialize in optimizing business processes and implementing innovative solutions to drive efficiency and growth.</p>
-    </section>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Successful Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section class="projects">
-        <h2>Successful Projects</h2>
-        <div class="project-item">
-            <p class="project-title">Project Alpha</p>
-            <p>Implemented a new CRM system that increased sales team productivity by 20%.</p>
-        </div>
-        <div class="project-item">
-            <p class="project-title">Project Beta</p>
-            <p>Redesigned business workflows resulting in a 15% reduction in operational costs.</p>
-        </div>
-        <div class="project-item">
-            <p class="project-title">Project Gamma</p>
-            <p>Led a team to integrate a new data analytics platform, enhancing decision-making processes.</p>
-        </div>
-    </section>
+    <main>
+        <div class="content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Welcome to my personal webpage! I'm Aaron Rector, a Business Systems Consultant working for Progressive Insurance. I specialize in optimizing business processes and implementing innovative solutions to drive efficiency and growth.</p>
+                <div class="graphic">
+                    <img src="https://via.placeholder.com/800x400.png?text=Business+Systems+Consulting" alt="Business Systems Consulting Graphic">
+                    <p>Optimizing business processes through innovative solutions</p>
+                </div>
+            </section>
 
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: your_email@example.com<br>
-            Phone: (440) 822-4698<br>
-            LinkedIn: <a href="https://www.linkedin.com/in/aaron-rector-3227b2126" target="_blank">Aaron Rector</a></p>
-    </section>
+            <section id="projects" class="projects">
+                <h2>Successful Projects</h2>
+                <div class="project-item">
+                    <p class="project-title">Project Alpha</p>
+                    <p>Implemented a new CRM system that increased sales team productivity by 20%.</p>
+                </div>
+                <div class="project-item">
+                    <p class="project-title">Project Beta</p>
+                    <p>Redesigned business workflows resulting in a 15% reduction in operational costs.</p>
+                </div>
+                <div class="project-item">
+                    <p class="project-title">Project Gamma</p>
+                    <p>Led a team to integrate a new data analytics platform, enhancing decision-making processes.</p>
+                </div>
+            </section>
 
-    <section class="graphic">
-        <img src="https://via.placeholder.com/800x400.png?text=Business+Systems+Consulting" alt="Business Systems Consulting Graphic">
-        <p>Optimizing business processes through innovative solutions</p>
-    </section>
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <div class="contact-info">
+                    <p>Email: your_email@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/aaron-rector-3227b2126" target="_blank">Aaron Rector on LinkedIn</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <footer>
         &copy; 2024 Aaron Rector | Designed by Aaron Rector
